@@ -6,6 +6,7 @@ import {
   CardHeader,
   Typography,
 } from "./material-components";
+import ButtonShare from "./ButtonShare";
 
 export default function CardPost({ title, description, img }) {
   return (
@@ -28,10 +29,7 @@ export default function CardPost({ title, description, img }) {
           </Typography>
         </CardBody>
         <CardFooter className="pt-0 flex justify-between">
-          <Button className="flex items-center gap-1">
-            <i class="bx bx-share-alt"></i>
-            <span>Share</span>
-          </Button>
+          <ButtonShare />
           <Button className="flex items-center gap-1">
             <i class="bx bxs-book-open"></i>
             <span>read more</span>
